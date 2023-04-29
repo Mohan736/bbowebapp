@@ -1,0 +1,244 @@
+.header {
+  position: fixed;
+  top: 30px;
+  z-index: 9;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transition: all 0.5s;
+}
+
+.headerup {
+  top: -100px;
+}
+
+.header .navbar {
+  border-radius: 60px;
+  padding: 24px 40px;
+}
+
+.nav-left,
+.logo-middle,
+.nav-right {
+  width: 33.33%;
+}
+
+.logo-middle {
+  display: flex;
+  justify-content: center;
+}
+.header .navbar-nav li:not(:last-child) {
+  padding-right: 30px;
+}
+
+.header .navbar-nav li a {
+  color: var(--white-clr);
+  font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: 1rem;
+  position: relative;
+  padding-bottom: 0;
+  outline: none;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.header .navbar-nav li a:not(.btn-no-animate)::before {
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  content: "";
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 300ms linear;
+}
+
+.header .navbar-nav li a:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.header .navbar-nav li a.btn:hover {
+  background-color: var(--white-clr);
+}
+
+/* TOGGLE MENU */
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-toggler span {
+  width: 30px;
+  height: 3px;
+  margin: 0 auto;
+  display: block;
+  background: #fff;
+  border-radius: 50px;
+  position: relative;
+  transition: all 0.15s linear;
+}
+
+.navbar-toggler span::before,
+.navbar-toggler span::after {
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  background: #fff;
+  border-radius: 50px;
+  content: "";
+  transition: all 0.15s linear;
+}
+
+.navbar-toggler span::before {
+  top: -6px;
+  left: 0;
+}
+
+.navbar-toggler span::after {
+  top: 6px;
+  left: 0;
+}
+
+.toggle-menu {
+  background: #000000;
+}
+.toggle-menu span::before {
+  transform: rotate(45deg);
+  background-color: #fff;
+  top: 0;
+}
+
+.toggle-menu span {
+  background-color: #000000;
+}
+
+.toggle-menu span::after {
+  transform: rotate(-45deg);
+  top: 0;
+  background-color: #fff;
+}
+
+/* member details navigation bar */
+.nav-header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 21;
+  background-color: var(--white-clr);
+  padding: 15px 0;
+}
+.navigation {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.item-left img {
+  width: 304px;
+}
+.item-right .user-image img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.user-profile p {
+  font-size: 16px;
+  margin: 0;
+}
+
+.user-profile:hover .dropdown-items {
+  opacity: 1;
+  visibility: visible;
+}
+.dropdown-items {
+  position: absolute;
+  right: 1rem;
+  top: 110%;
+  padding: 15px 20px;
+  background-color: var(--white-clr);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+.dropdown-items a {
+  display: inline-flex;
+  align-items: center;
+  color: var(--primary-clr);
+  gap: 10px;
+}
+.dropdown-items ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.dropdown-items .nav-icons {
+  height: 32px;
+  width: 32px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  display: inline-grid;
+  place-items: center;
+  border-radius: 50px;
+}
+/* member details navigation bar ends */
+
+@media (max-width: 1199px) {
+  header .container {
+    max-width: 100%;
+  }
+  .header .navbar-nav li:not(:last-child) {
+    padding-right: 5px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .header .navbar-nav li a {
+    font-size: 0.875rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .mob-show,
+  .navbar-collapse.mobile-menu {
+    display: none !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .header .navbar {
+    border-radius: 0px;
+    padding: 15px;
+  }
+
+  .desktop-menu {
+    display: none;
+  }
+
+  header .navbar-nav li {
+    padding-right: 0 !important;
+    margin-top: 30px;
+    margin-right: 0 !important;
+  }
+
+  .header .navbar-nav li a {
+    width: 100%;
+  }
+}
+
+@media (max-width: 568px) {
+  .navbar-brand img {
+    max-width: 180px;
+  }
+}

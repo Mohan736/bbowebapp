@@ -1,0 +1,91 @@
+.body-padding {
+  padding-top: 175px !important;
+}
+
+.text-fade {
+  color: rgba(0, 0, 0, 0.4) !important;
+}
+
+.img-animate {
+  width: 247px;
+  height: 520px;
+  border-radius: 150px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.img-animate-circle {
+  width: 320px;
+  height: 320px;
+  border-radius: 100%;
+  margin-left: -50px;
+}
+
+.img-grid {
+  position: absolute;
+  bottom: 0;
+  left: 247px;
+  text-align: center;
+}
+
+.img-grid img:nth-child(1) {
+  margin-left: -30px;
+}
+
+.hero .btn {
+  margin-top: 50px;
+}
+
+.why-bbo-hero .col-md-6.position-relative {
+  height: 528px;
+}
+
+.line {
+  position: relative;
+  overflow: hidden;
+  will-change: transform;
+  display: inline-block !important;
+}
+
+.record-block {
+  padding: 2rem 1.875rem;
+  border-top: 1px solid #00000020;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.record-block::before {
+  content: "";
+  position: absolute;
+  background-color: var(--secondary-clr);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  left: 0;
+  bottom: 100%;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+.record-block:hover::before {
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+}
+
+.record-block:hover {
+  border-color: var(--secondary-clr);
+}
+
+.record-block h3 {
+  font-size: 7rem;
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  line-height: 100%;
+  position: relative;
+  display: inline-block;
+}

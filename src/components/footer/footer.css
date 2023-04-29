@@ -1,0 +1,28 @@
+
+.footer-logo {
+    width: 100%;
+    max-width: 400px;
+}
+
+.site-rights {
+    color: var(--white-clr);
+}
+
+
+
+
+.gallery-logo {
+    position: absolute;
+    width: auto;
+    z-index: 1;
+}
+
+.gallery-logo-top {
+    top: 115px;
+    left: 170px;
+}
+
+.gallery-logo-bottom {
+    top: 13%;
+    right: 170px;
+}

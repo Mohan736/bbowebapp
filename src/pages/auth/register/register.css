@@ -1,0 +1,258 @@
+.form-label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.role {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.role__blk input {
+  display: none;
+}
+
+.role__blk label {
+  border: 1px solid rgba(217, 217, 217, 1);
+  height: 50px;
+  border: 1px solid #d9d9d9;
+  border-radius: 50px;
+  line-height: 50px;
+  display: block;
+  text-align: center;
+  color: #000000;
+  cursor: pointer;
+}
+
+.role__blk input:checked + label {
+  background: var(--secondary-clr);
+  border-color: var(--secondary-clr);
+}
+
+.email-sent-noti {
+  display: none;
+  background-color: var(--secondary-clr);
+  border-radius: 50px;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  padding: 6px 10px;
+}
+/* step form */
+.step {
+  display: none;
+}
+.small-text {
+  font-size: 14px;
+  line-height: 19.1px;
+}
+.p-default {
+  font-size: 16px;
+  line-height: 30px;
+}
+.step-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgba(251, 251, 251, 1);
+}
+
+.quote-left .copyright {
+  position: absolute;
+  bottom: 30px;
+
+}
+.quote-left,
+.form-right {
+  padding: 50px 70px;
+}
+.form-right {
+  width: 60%;
+  height: 100%;
+  margin-left: 40%;
+  flex: 0 0 60%;
+  background-color: rgba(251, 251, 251, 1);
+}
+.quote {
+  max-width: 300px;
+  font-size: 30px;
+  line-height: 44px;
+  color: var(--white-clr);
+}
+.quote span {
+  color: var(--secondary-clr);
+}
+.progress {
+  height: 19px;
+  border-radius: 50px;
+  background-color: rgba(217, 217, 217, 0.3);
+}
+.progress-bar {
+  text-align: end;
+  padding-right: 10px;
+  border-radius: 50px;
+  font-family: var(--primary-font);
+  color: var(--primary-clr);
+  background-color: var(--secondary-clr);
+}
+.profile-photo-trigger {
+  position: relative;
+  cursor: pointer;
+  height: 300px;
+  width: 100%;
+  background-color: var(--white-clr);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 34px;
+  border: 2px dashed rgba(0, 0, 0, 0.7);
+}
+.profile-photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.upload-btn.btn {
+  margin-top: 40px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff !important;
+}
+
+.upload-btn:hover {
+  color: var(--secondary-clr) !important;
+}
+
+.block-get-touch.step-form {
+  padding: 0;
+}
+
+.ste
+
+.block-get-touch.step-form::before,
+.block-get-touch.step-form::after {
+  content: unset;
+}
+.block-get-touch.step-form .form-control {
+  padding: 10px 0;
+  color: var(--primary-clr);
+  /* height: 100%; */
+}
+.block-get-touch.step-form .form-control::placeholder {
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.4);
+}
+.block-get-touch.step-form input[type="file"].form-control {
+  padding: 10px;
+  border: 0px solid transparent;
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 14px;
+  /* height: 100%; */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+.select-form {
+  position: relative;
+  height: 100%;
+  z-index: 2;
+}
+
+.select-form select {
+  font-size: 14px;
+  background: url(../../../../public/images/arrow-down.svg);
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+
+/* .select-form::after {
+  z-index: -1;
+  content: url(../../../../public/images/arrow-down.svg);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+} */
+
+.btn-primary-fill svg path {
+  transition: all 0.3s ease;
+}
+.btn-primary-fill:hover svg path {
+  fill: var(--primary-clr) !important;
+}
+.button-group {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+.button-group button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+.button-group button:nth-child(2) {
+  margin-left: auto;
+}
+.prev-slide svg path,
+.prev-slide {
+  background-color: transparent;
+  border: none;
+  color: rgba(0, 0, 0, 0.4) !important;
+  fill: rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+}
+.prev-slide:hover svg path,
+.prev-slide:hover {
+  color: rgba(0, 0, 0, 1) !important;
+  fill: rgba(0, 0, 0, 1);
+}
+.add-more {
+  cursor: pointer;
+}
+
+.datepicker-wrapper {
+  position: relative;
+  z-index: 3;
+}
+
+.datepicker-wrapper::after {
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  content: url(../../../../public/images/calander.svg);
+  pointer-events: none;
+}
+
+.bg {
+  height: 640px;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+}
+
+.text-fade {
+  color: rgba(0, 0, 0, 0.4) !important;
+}
+.body-padding {
+  padding-top: 175px !important;
+}
+.role__blk:nth-child(2) input:checked + label {
+  color: #fff;
+  background: #1790ff;
+  border-color: #1790ff;
+}
+.role__blk:nth-child(3) input:checked + label {
+  color: var(--white-clr);
+  background: #08b652;
+  border-color: #08b652;
+}
+.w-65 {
+  width: 65% !important;
+}
+
+.steps-image {
+  background-size: cover !important;
+}

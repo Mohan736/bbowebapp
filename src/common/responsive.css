@@ -1,0 +1,369 @@
+@media (max-width: 1059px) {
+  .work-process-block h4 {
+    font-size: 1.1rem;
+  }
+
+  .why-bbo-hero .img-animate,
+  .why-bbo-hero .col-md-6.position-relative {
+    height: 500px !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .why-bbo-hero .img-animate-circle {
+    width: 270px;
+    height: 270px;
+    background-size: cover;
+  }
+}
+@media (max-width: 991px) {
+  /* PROCESS SECTION */
+
+  .work-process-sec svg {
+    width: 25px;
+  }
+
+  /* members details page */
+  .item-left img {
+    width: 200px;
+  }
+  .quote-left,
+  .form-right {
+    width: 100%;
+    flex: 0 0 100%;
+    margin: unset;
+  }
+  .quote-left {
+    position: relative;
+  }
+  .quote-left .copyright {
+    position: relative;
+    bottom: unset;
+  }
+
+ 
+  /* members details page ends */
+  /* why BBO */
+  .why-bbo-hero .img-animate,
+  .why-bbo-hero .col-md-6.position-relative {
+    height: 460px !important;
+  }
+  .why-bbo-hero .img-animate {
+    width: 190px;
+  }
+  .why-bbo-hero .img-grid {
+    left: 200px;
+  }
+  .why-bbo-hero .img-animate-circle {
+    width: 220px;
+    height: 220px;
+  }
+  /* why BBO ends */
+  /* new pass page */
+  .pass-valid {
+    column-count: 1;
+  }
+  /* new pass page ends */
+}
+
+@media (max-width: 767px) {
+  /* menotor sliding image animation */
+
+  .sec-mentor {
+    height: auto;
+  }
+
+  .sec-mentor .col-md-7 {
+    height: 500px;
+    overflow: hidden;
+  }
+  .gallery-logo-bottom {
+    top: unset;
+    bottom: 115px;
+    right: 170px;
+  }
+  .mentor-img-blk {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+
+  .mentor-img-blk .img-blk {
+    width: 30%;
+  }
+  .mentor-img-blk .img-blk > img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* members details page */
+  .item-left img {
+    width: 150px !important;
+  }
+  .quote-left,
+  .form-right {
+    padding: 50px;
+  }
+  .user-profile p {
+    font-size: 14px;
+  }
+  /* members details page ends */
+  /* who we are page */
+  .who-we-are-banner {
+    height: 650px;
+  }
+  .banner-graphics img:nth-child(1) {
+    top: -140px;
+    width: 150px;
+  }
+
+  .graphics-2{
+    display: none;
+  }
+  .banner-graphics img:nth-child(3) {
+    top: -44px;
+  }
+  .graphics-4,  .graphics-6 , .graphics-5, .graphics-7 {
+    display: none;
+  }
+
+
+  .contact-list li a {
+    font-size: 1.3rem;
+  }
+  /* who we are page ends */
+  /* footer */
+  .footer .footer-logo {
+    max-width: 200px;
+  }
+  /* footer ends */
+  /* why BBO */
+  .why-bbo-hero .img-animate,
+  .why-bbo-hero .col-md-6.position-relative {
+    height: 290px !important;
+  }
+  .why-bbo-hero .img-animate {
+    width: 130px;
+  }
+  .why-bbo-hero .img-animate-circle {
+    width: 150px;
+    height: 150px;
+  }
+  .why-bbo-hero .img-grid img:nth-child(1) {
+    width: 65px;
+  }
+  .why-bbo-hero .img-grid {
+    left: 160px;
+  }
+  /* why BBO ends */
+  /* what we do page */
+  .what-we-hero .col-md-3 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .what-we-hero .col-md-3 .img-wrap {
+    position: unset;
+  }
+
+  .img-one, .img-two{
+    display: none;
+  }
+  .what-we-do-heading {
+    padding-top: 0;
+  }
+  /* what we do page ends */
+  /* new pass page */
+  .pass-valid {
+    column-count: 2;
+  }
+  /* new pass page ends */
+}
+
+@media (max-width: 667px) {
+  .btn {
+    padding: 9px 25px !important;
+    min-width: 160px;
+  }
+  .work-process-block h4 {
+    font-size: 1.3rem;
+  }
+  .work-process-sec svg {
+    display: none;
+  }
+  /* mentor slider */
+  .mentor-img-blk {
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  .mentor-img-blk .img-blk {
+    width: 45%;
+  }
+  .gallery-logo-top {
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+  }
+  .gallery-logo-bottom {
+    top: unset;
+    bottom: 25%;
+    right: 50%;
+    transform: translate(50%, 25%);
+  }
+  /* mentor slider ends */
+
+  .work-process-sec {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 30px;
+    position: relative;
+  }
+
+  .work-process-sec:last-child {
+    margin-bottom: 0;
+  }
+
+  /* .work-process-sec svg {
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+          bottom: -35px;
+          transform: rotate(90deg);
+      } */
+
+  /* counter */
+  .record-block h3 {
+    font-size: 4rem;
+  }
+
+  /* members details page */
+  .button-group {
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center !important;
+  }
+  .button-group button {
+    margin: unset !important;
+  }
+  .quote-left,
+  .form-right {
+    padding: 30px 1rem;
+  }
+  /* members details page ends */
+  /* who we are page */
+  .banner-graphics img:nth-child(3),
+  .banner-graphics img:nth-child(7) {
+    display: none;
+  }
+  .banner-graphics img:nth-child(5) {
+    width: 125px;
+  }
+  /* who we are page ends */
+  .popup-wrapper {
+    padding: 30px;
+  }
+}
+@media (max-width: 575px) {
+  .section-padding {
+    padding: 30px 0;
+  }
+  .footer .col-md-6 {
+    text-align: center !important;
+  }
+  .footer .footer-logo {
+    max-width: 160px;
+  }
+  .footer.section-padding {
+    padding: 20px 0;
+  }
+  .contact-list li a {
+    font-size: 1rem;
+  }
+  /* why BBO */
+  .why-bbo-hero .col-md-6.position-relative {
+    width: 275px;
+    margin: auto;
+  }
+  /* why BBO ends */
+}
+@media (max-width: 480px) {
+  /* mentor slider */
+  .gallery-logo-top,
+  .gallery-logo-bottom {
+    width: 120px;
+  }
+
+  .user-profile .user-details {
+    display: none;
+  }
+  .item-right .user-image {
+    width: 35px;
+    height: 35px;
+  }
+  .dropdown-items a {
+    font-size: 14px;
+  }
+  /* who we are page */
+  .img-blk .img-contents {
+    left: unset;
+    right: 50%;
+    transform: translateX(50%);
+  }
+  .block-get-touch {
+    padding: 30px;
+  }
+  /* who we are page ends */
+  /* what we do page */
+  /* .what-we-hero.section-padding {
+    padding-top: 80px !important;
+  } */
+  .col-md-3 .img-wrap.img-two,
+  .col-md-3 .img-wrap.img-four {
+    display: none;
+  }
+  /* what we do page ends */
+  /* new pass page */
+  .pass-valid {
+    column-count: 1;
+  }
+  /* new pass page ends */
+  .role {
+    gap: 7px !important;
+  }
+  .role__blk label {
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+  }
+}
+@media (min-width: 992px) {
+  .mob-show,
+  .navbar-collapse.mobile-menu {
+    display: none !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .header .navbar {
+    border-radius: 0px;
+    padding: 15px;
+  }
+
+  .desktop-menu {
+    display: none;
+  }
+
+  header .navbar-nav li {
+    padding-right: 0 !important;
+    margin-top: 30px;
+    margin-right: 0 !important;
+  }
+
+  .header .navbar-nav li a {
+    width: 100%;
+  }
+}
+
+@media (max-width: 568px) {
+  .navbar-brand img {
+    max-width: 180px;
+  }
+}

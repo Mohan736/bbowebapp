@@ -1,0 +1,118 @@
+.block-get-touch {
+  padding: 3.75rem 3.125rem !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.block-get-touch::before,
+.block-get-touch::after {
+  content: "";
+  position: absolute;
+  scale: 1.1;
+}
+
+.block-get-touch::before {
+  border: 32px solid var(--primary-clr);
+  top: 0;
+  right: 0;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+}
+
+.block-get-touch::after {
+  border: 26px solid var(--white-clr);
+  left: 0;
+  bottom: 0;
+  border-right-color: transparent;
+  border-top-color: transparent;
+}
+
+.block-get-touch .input-group {
+  margin-bottom: 1.5rem;
+}
+
+.block-get-touch .form-control {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #00000052;
+  border-radius: 0;
+  color: var(--secondary-clr);
+  padding-left: 0;
+}
+
+.secondary-bg-clr .form-control {
+  color: var(--primary-clr) !important;
+}
+
+.block-get-touch .form-control::placeholder {
+  color: var(--primary-clr);
+}
+
+.block-get-touch .form-control::-webkit-input-placeholder {
+  /* Edge */
+  color: var(--primary-clr);
+}
+
+.block-get-touch .form-control:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: var(--primary-clr);
+}
+
+.block-get-touch .form-control:focus {
+  box-shadow: none;
+}
+
+.block-get-touch textarea.form-control {
+  resize: none;
+  height: 100px;
+}
+
+.block-get-touch .btn:hover {
+  background-color: #fff;
+}
+
+.contact-list li {
+  display: flex;
+  align-items: center;
+}
+
+.contact-list li:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.contact-list li span {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.contact-list li a {
+  color: var(--primary-clr);
+  font-size: 1.5rem;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.contact-list li a::before {
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary-clr);
+  content: "";
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 300ms linear;
+}
+
+.contact-list li a:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.contact-list li span img {
+  width: 28px;
+}
+/* .form-control:focus {
+  background: transparent !important;
+} */

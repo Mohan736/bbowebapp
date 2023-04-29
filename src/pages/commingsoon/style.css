@@ -1,0 +1,9 @@
+section.comming_soon_page {
+	position: relative;
+	height: 100vh;
+	background: url(../../../public/images/comming-bg.jpg);
+	background-size: cover;
+	background-position: center;
+  display: flex;
+  align-items: center;
+}

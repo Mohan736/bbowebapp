@@ -1,0 +1,336 @@
+.hero-section {
+  height: 750px;
+  overflow: hidden;
+  position: relative;
+}
+
+section.hero-section:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  left: 0px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
+  z-index: 1;
+  bottom: 0;
+}
+
+.hero-content {
+  position: absolute;
+  top: 250px;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  min-height: calc(100vh - 70px);
+  z-index: 1;
+}
+
+.hero-content h1 {
+  margin-bottom: 50px;
+}
+
+.hero-bg-stuff {
+  height: 120vmax;
+  position: relative;
+  overflow: hidden;
+}
+
+.stuff-img-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 150%;
+  height: 120vmax;
+  -webkit-transform: translate3d(-50%, -50%, 0) rotate(-22.5deg);
+  transform: translate3d(-50%, -50%, 0) rotate(-22.5deg);
+}
+
+.stuff-img-list li {
+  flex: none;
+  display: block;
+  width: 24vmax;
+  margin-top: -20vmax;
+  padding: 0 1rem;
+}
+
+.stuff-img-list .stuff-img {
+  margin: 2vw 0;
+  flex: none;
+  width: 100%;
+  height: 24vmax;
+  background-size: cover;
+  background-position: 50% 50%;
+  opacity: 0.4;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+}
+.sec-bbtm {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.section__heading {
+  text-transform: capitalize;
+  margin-bottom: 25px;
+}
+.mouse-animate {
+  animation: sectionscroll 1s ease-in-out infinite;
+}
+
+@keyframes sectionscroll {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(30px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+.record-block {
+  padding: 2rem 1.875rem;
+  border-top: 1px solid #00000020;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.record-block::before {
+  content: "";
+  position: absolute;
+  background-color: var(--secondary-clr);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  left: 0;
+  bottom: 100%;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+.record-block:hover::before {
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+}
+
+.record-block:hover {
+  border-color: var(--secondary-clr);
+}
+
+.record-block h3 {
+  font-size: 7rem;
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  line-height: 100%;
+  position: relative;
+  display: inline-block;
+}
+
+/* Improve Skills */
+
+.listing li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 30px;
+}
+
+.listing li::before {
+  background: url("../../../public/images/listing-icon.svg");
+
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 0;
+  top: 8px;
+  background-repeat: no-repeat;
+}
+
+.sec-mentor {
+  height: 800px;
+  overflow: hidden;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.mentor-img-blk {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.mentor-img-blk img {
+  filter: grayscale();
+}
+
+.mentor-img-blk img:hover {
+  filter: none;
+}
+
+.sec-mentor__grid__one {
+  animation: galleryfirst 90s linear infinite;
+  animation-direction: alternate;
+}
+
+.sec-mentor__grid__two {
+  animation: galleryfirst 90s linear infinite;
+  animation-direction: alternate;
+}
+
+.sec-mentor__grid__three {
+  animation: galleryfirst 90s linear infinite;
+  animation-direction: alternate;
+}
+
+.sec-bbtm {
+  overflow: hidden;
+}
+
+@keyframes galleryfirst {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+
+  100% {
+    transform: translate3d(0px, -3000px, 0px);
+  }
+}
+
+@keyframes gallerysecond {
+  0% {
+    transform: translate3d(0px, -1500px, 0px);
+  }
+
+  100% {
+    transform: translate3d(0px, 0, 0px);
+  }
+}
+
+.mentor-img-blk:hover {
+  animation-play-state: paused;
+}
+.gallery-logo-top {
+  top: 115px;
+  left: 170px;
+}
+.gallery-logo {
+  position: absolute;
+  width: auto !important;
+  z-index: 1;
+}
+
+/* sponsership css */
+
+.sponsorship {
+  position: relative;
+  padding: 115px 0px !important;
+  background-size: cover;
+}
+
+.sponsorship::before {
+  background: rgba(10, 17, 21, 0.7);
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.certification:after {
+  content: attr(data-title);
+  /*    position: absolute;*/
+  left: 60px;
+}
+
+.record-block h5 {
+  font-size: 1.25rem;
+  font-family: var(--primary-font);
+  font-weight: 400;
+  margin-bottom: 0;
+  margin-top: 1rem;
+  text-transform: capitalize;
+}
+
+/* ends */
+
+/* start Process Css  */
+
+.work-process-sec {
+  width: 27.33333333%;
+  max-width: 100%;
+  flex: 0 0 auto;
+  margin-left: 3%;
+  margin-right: 3%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.work-process-sec svg {
+  position: absolute;
+  left: calc(100% + 13px);
+}
+
+.work-process-sec:hover svg path {
+  stroke: var(--primary-clr);
+}
+
+.work-process-block {
+  border: 1px solid #00000040;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  width: 100%;
+}
+
+.work-process-block::before {
+  content: "";
+  position: absolute;
+  background-color: var(--secondary-clr);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  left: 0;
+  bottom: 100%;
+  transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transform: translateY(205%);
+  transform: translateY(205%);
+}
+
+.work-process-block:hover::before {
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+}
+
+.work-process-block figure {
+  margin-bottom: 0;
+  padding: 3rem;
+  width: 100%;
+  height: 248px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.work-process-block img {
+  width: 120px;
+}
+
+.work-process-block h4 {
+  margin-bottom: 0;
+  padding: 1.4rem 1rem;
+  border-top: 1px solid #00000040;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
